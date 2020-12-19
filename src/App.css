@@ -1,4 +1,5 @@
 @import "assets/Raleway.css";
+@import "assets/Open_Sans.css";
 
 /* width */
 ::-webkit-scrollbar {
@@ -62,7 +63,7 @@
 }
 
 .nav-button:hover {
-  background-color: #1db5a3;
+  background-color: #26ceba;
   /*background-color: #4f000b;*/
   /*background-color: #2b2b2b;*/
   color:white !important;
@@ -83,6 +84,7 @@
   color: white;
   font-family: Raleway;
   font-weight: 300 !important;
+  text-shadow: 1px 1px 1px black;
 }
 
 .light-title {
@@ -98,6 +100,169 @@
 .display-1 {
   font-size: calc(1.725rem + 5.7vw) !important;
 }
+
+.display-2 {
+  font-size: calc(1.580rem + 4.65vw) !important;
+}
+
+.display-3 {
+  font-size: calc(1.375rem + 3.6vw) !important;
+}
+
 .display-4 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.000rem + 1.75vw) !important;
+}
+
+.white-p-text {
+  color: white;
+  font-family: "Open Sans";
+}
+
+.button-light {
+  font-family: Raleway;
+  font-weight: 100 !important;
+  background-color: #1db5a3 !important;
+  border: 1px #1db5a3 solid !important;
+  border-radius: 2px !important;
+  font-size: 1.2em !important;
+  color: white !important;
+}
+
+.button-light:hover {
+  background-color: white !important;
+  border: 1px black solid !important;
+  color:black !important;
+}
+
+.button-dark {
+  font-family: Raleway;
+  font-weight: 100 !important;
+  background-color: #2b2b2b !important;
+  border: 1px #2b2b2b solid !important;
+  border-radius:  2px !important;
+  font-size: 1.2em !important;
+  color: white !important;
+}
+
+.button-dark:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px black solid !important;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+.vertical-line {
+  border-bottom: 1px solid white;
+}
+
+.footer-text {
+  color: #1db5a3;
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  font-weight: 100;
+}
+
+.footer-text:hover {
+  text-decoration: none;
+  color: gray
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.fly-in {
+  animation: flyIn ease 2s;
+  -webkit-animation: flyIn ease 2s;
+  -moz-animation: flyIn ease 2s;
+  -o-animation: flyIn ease 2s;
+  -ms-animation: flyIn ease 2s;
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flyIn {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+  
+@-webkit-keyframes flyIn {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+  
+@-o-keyframes flyIn {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+  
+@-ms-keyframes flyIn {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.test {
+  border: 1px black solid !important;
 }
