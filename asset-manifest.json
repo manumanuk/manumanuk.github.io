@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.426f7e7b.chunk.css",
-    "main.js": "/static/js/main.1a6a2fbe.chunk.js",
-    "main.js.map": "/static/js/main.1a6a2fbe.chunk.js.map",
+    "main.css": "/static/css/main.cefd36ba.chunk.css",
+    "main.js": "/static/js/main.f9aba2d5.chunk.js",
+    "main.js.map": "/static/js/main.f9aba2d5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f3bfa2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f3bfa2a.js.map",
     "static/css/2.3cf5d70f.chunk.css": "/static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.e67f8d34.chunk.js": "/static/js/2.e67f8d34.chunk.js",
-    "static/js/2.e67f8d34.chunk.js.map": "/static/js/2.e67f8d34.chunk.js.map",
+    "static/js/2.4d985957.chunk.js": "/static/js/2.4d985957.chunk.js",
+    "static/js/2.4d985957.chunk.js.map": "/static/js/2.4d985957.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e16e8e3811ee79b9cce06a959eb653c2.js": "/precache-manifest.e16e8e3811ee79b9cce06a959eb653c2.js",
+    "precache-manifest.3a1e6ab4c0a9294f35235c6998fb08cc.js": "/precache-manifest.3a1e6ab4c0a9294f35235c6998fb08cc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3cf5d70f.chunk.css.map": "/static/css/2.3cf5d70f.chunk.css.map",
-    "static/css/main.426f7e7b.chunk.css.map": "/static/css/main.426f7e7b.chunk.css.map",
-    "static/js/2.e67f8d34.chunk.js.LICENSE.txt": "/static/js/2.e67f8d34.chunk.js.LICENSE.txt",
+    "static/css/main.cefd36ba.chunk.css.map": "/static/css/main.cefd36ba.chunk.css.map",
+    "static/js/2.4d985957.chunk.js.LICENSE.txt": "/static/js/2.4d985957.chunk.js.LICENSE.txt",
     "static/media/arduino_bluetooth.jpg": "/static/media/arduino_bluetooth.d1e16ef4.jpg",
     "static/media/code.jpg": "/static/media/code.d33e419b.jpg",
     "static/media/coquito_details.png": "/static/media/coquito_details.a4fe2554.png",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.2f3bfa2a.js",
     "static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.e67f8d34.chunk.js",
-    "static/css/main.426f7e7b.chunk.css",
-    "static/js/main.1a6a2fbe.chunk.js"
+    "static/js/2.4d985957.chunk.js",
+    "static/css/main.cefd36ba.chunk.css",
+    "static/js/main.f9aba2d5.chunk.js"
   ]
 }
