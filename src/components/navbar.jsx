@@ -9,7 +9,7 @@ class NavbarComponent extends Component {
     
     render() {
         return(
-            <Navbar collapseOnSelect expand="lg" className="custom-nav navbar-expand-sm" sticky="top">
+            <Navbar id="nav" collapseOnSelect expand="lg" className="custom-nav navbar-expand-sm" sticky="top">
                 <Link to="/"><Navbar.Brand className="ml-2" id="nav-brand">ARYAN KALIA</Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

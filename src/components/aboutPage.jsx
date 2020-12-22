@@ -31,10 +31,10 @@ class AboutPage extends Component {
                         <Row>
                             <Col lg={6} md={6} sm={12} xs={12}>
                                 <Image fluid className="mb-3" src={moonpic}/>
-                                <p className="w-100 text-center">Image taken by me!</p>
+                                <p className="w-100 text-center post-text">Image taken by me!</p>
                             </Col>
                             <Col lg={6} md={6} sm={12} xs={12} className="d-flex align-items-center">
-                                <p>Hey! Thanks for visiting my website. I'm Aryan Kalia - a Mechatronics Engineering student at the University of Waterloo with an interest in embedded systems, robotics, Machine Learning, and more. Some of my hobbies include astrophotography, creative writing, and running among several other things. I'm greatly interested in the potential that Blockchain and Machine Learning have to revolutionize the way we view ownership, and our lifestyles in general. I would love any opportunities to continue exploring my interests further and applying my knowledge and experience with hardware and software to projects I find exciting.</p>
+                                <p className="post-text">Hey! Thanks for visiting my website. I'm Aryan Kalia - a Mechatronics Engineering student at the University of Waterloo with an interest in embedded systems, robotics, Machine Learning, and more. Some of my hobbies include astrophotography, creative writing, and running among several other things. I'm greatly interested in the potential that Blockchain and Machine Learning have to revolutionize the way we view ownership, and our lifestyles in general. I would love any opportunities to continue exploring my interests further and applying my knowledge and experience with hardware and software to projects I find exciting.</p>
                             </Col>
                         </Row>
                     </Container>

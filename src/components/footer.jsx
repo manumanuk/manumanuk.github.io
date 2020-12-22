@@ -14,7 +14,7 @@ class Footer extends Component {
             page2: "",
             page3: ""
         };
-        this.pageNames = ["Home", "Software", "Hardware", "About"];
+        this.pageNames = ["Home", "Hardware", "Software", "About"];
         this.links = {
             "Home" : "/",
             "Software" : "/software",
@@ -53,6 +53,10 @@ class Footer extends Component {
                         <Col>
                             <Link className="footer-text" to={this.links[this.state.page3]}><p>{this.state.page3}</p></Link>
                         </Col>
+                        {!this.props.pageName &&
+                        <Col>
+                            <Link className="footer-text" to="/about"><p>About</p></Link>
+                        </Col>}
                     </Row>
                 </Container>
             </footer>

@@ -18,8 +18,10 @@ function App() {
         <Switch>
             <Route strict exact path="/" component={ HomePage } />
             <Route path="/about" component={ AboutPage } />
-            <Route path="/hardware" component={ HardwarePage } />
-            <Route path="/software" component={ SoftwarePage } />
+            <Route exact path="/hardware" component={ HardwarePage } />
+            <Route path="/hardware/:elementId" render={(props) => (<HardwarePage {...props}/>) } />
+            <Route exact path="/software" component={ SoftwarePage } />
+            <Route path="/software/:elementId" render={(props) => (<SoftwarePage {...props}/>) } />
             <Route component={ NotFoundPage } />
         </Switch>
       </div>

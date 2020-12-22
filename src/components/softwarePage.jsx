@@ -50,11 +50,11 @@ class SoftwarePage extends Component {
                     <Container >
                         {this.state.posts && Object.keys(this.state.posts).map((key, index) => (
                             <div>
-                            <div id={this.state.posts[key].id} style={{position: 'relative', top: '-10vh'}}></div>
-                            <Post content={this.state.posts[key]} index={index} />
-                            <div className="horizontal-line"></div>
+                            <Post content={this.state.posts[key]} index={index} scrollTo={this.props.match.params.elementId} />
+                            {index+1 != this.state.posts.length-1 && <div className="horizontal-divider" ></div>}
                             </div>
                         ))}
+                        <div id="test-bed"></div>
                     </Container>
                 </div>
                 <Footer pageName="Software"/>

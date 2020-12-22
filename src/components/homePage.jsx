@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import homebkg from '../assets/homebkg.jpg';
-import redboard from '../assets/redboard_dark.jpg';
-import codebkg from '../assets/code.jpg';
+import redboard from '../assets/redboard_background.jpg';
+import codebkg from '../assets/code_background.jpg';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -26,11 +26,8 @@ class HomePage extends Component {
     render() {
         return(
             <body>
-                <div className="w-100 d-flex align-items-end position-absolute" style={{top: "65vh"}}>
+                <div className="w-100 d-flex align-items-end position-absolute" style={{top: "75vh"}}>
                     <Container className="fade-in fly-in">
-                        <Row>
-                            <Col><div className="my-5 d-lg-block d-none" style={{height: '1px'}}></div></Col>
-                        </Row>
                         <Row className = "mt-5">
                             <Col className="d-flex justify-content-center">
                                 <a target="_blank" href="https://github.com/manumanuk"><img className="invert icon" src={githubLogo} style={{height: '30px'}} /></a>
