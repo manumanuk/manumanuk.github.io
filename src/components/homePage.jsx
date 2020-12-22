@@ -26,7 +26,7 @@ class HomePage extends Component {
     render() {
         return(
             <body>
-                <div className="w-100 d-flex align-items-end position-absolute" style={{top: "75vh"}}>
+                <div className="w-100 d-flex align-items-end position-absolute" style={{top: "72vh"}}>
                     <Container className="fade-in fly-in">
                         <Row className = "mt-5">
                             <Col className="d-flex justify-content-center">

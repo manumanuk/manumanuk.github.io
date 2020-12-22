@@ -60,7 +60,7 @@ class Post extends Component {
             id: data.id
         }, () => {
             if(this.props.scrollTo && document.getElementById(this.props.scrollTo) != null) {
-                window.scrollTo(0, document.getElementById(this.props.scrollTo).offsetTop - document.getElementById('nav').offsetHeight);
+                window.scrollTo({top: document.getElementById(this.props.scrollTo).offsetTop - document.getElementById('nav').offsetHeight, behavior: 'smooth'});
             }
         });
         this.updateWindowDimensions();
