@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a56a1e2.chunk.css",
-    "main.js": "/static/js/main.da745435.chunk.js",
-    "main.js.map": "/static/js/main.da745435.chunk.js.map",
+    "main.css": "/static/css/main.5cedc6ba.chunk.css",
+    "main.js": "/static/js/main.d35220d0.chunk.js",
+    "main.js.map": "/static/js/main.d35220d0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f3bfa2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f3bfa2a.js.map",
     "static/css/2.3cf5d70f.chunk.css": "/static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.c6e3a0d9.chunk.js": "/static/js/2.c6e3a0d9.chunk.js",
-    "static/js/2.c6e3a0d9.chunk.js.map": "/static/js/2.c6e3a0d9.chunk.js.map",
+    "static/js/2.91cc935a.chunk.js": "/static/js/2.91cc935a.chunk.js",
+    "static/js/2.91cc935a.chunk.js.map": "/static/js/2.91cc935a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d437d3dca93a2c3e9f08fc4f7851df11.js": "/precache-manifest.d437d3dca93a2c3e9f08fc4f7851df11.js",
+    "precache-manifest.0bd36128f088425646b7c182cae8fe1b.js": "/precache-manifest.0bd36128f088425646b7c182cae8fe1b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3cf5d70f.chunk.css.map": "/static/css/2.3cf5d70f.chunk.css.map",
-    "static/css/main.9a56a1e2.chunk.css.map": "/static/css/main.9a56a1e2.chunk.css.map",
-    "static/js/2.c6e3a0d9.chunk.js.LICENSE.txt": "/static/js/2.c6e3a0d9.chunk.js.LICENSE.txt",
+    "static/css/main.5cedc6ba.chunk.css.map": "/static/css/main.5cedc6ba.chunk.css.map",
+    "static/js/2.91cc935a.chunk.js.LICENSE.txt": "/static/js/2.91cc935a.chunk.js.LICENSE.txt",
     "static/media/arduino_bluetooth.jpg": "/static/media/arduino_bluetooth.d1e16ef4.jpg",
     "static/media/code.jpg": "/static/media/code.d33e419b.jpg",
+    "static/media/code_background.jpg": "/static/media/code_background.2ad5e244.jpg",
     "static/media/coquito_details.png": "/static/media/coquito_details.a4fe2554.png",
     "static/media/coquito_home.png": "/static/media/coquito_home.0e589ea0.png",
     "static/media/drone_flying.png": "/static/media/drone_flying.0fd1d568.png",
@@ -34,6 +35,7 @@
     "static/media/ni_labview.jpg": "/static/media/ni_labview.a1c9f6ff.jpg",
     "static/media/ni_mydaq.jpg": "/static/media/ni_mydaq.0d3e3263.jpg",
     "static/media/redboard.JPG": "/static/media/redboard.163574f0.JPG",
+    "static/media/redboard_background.jpg": "/static/media/redboard_background.ab28ca72.jpg",
     "static/media/redboard_dark.jpg": "/static/media/redboard_dark.b491ebfa.jpg",
     "static/media/sonify_convert.png": "/static/media/sonify_convert.37066fed.png",
     "static/media/sonify_home.png": "/static/media/sonify_home.af605ad8.png",
@@ -43,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.2f3bfa2a.js",
     "static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.c6e3a0d9.chunk.js",
-    "static/css/main.9a56a1e2.chunk.css",
-    "static/js/main.da745435.chunk.js"
+    "static/js/2.91cc935a.chunk.js",
+    "static/css/main.5cedc6ba.chunk.css",
+    "static/js/main.d35220d0.chunk.js"
   ]
 }
