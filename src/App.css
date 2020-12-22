@@ -14,12 +14,7 @@ a:hover {
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-.main-content {
-  background-color: rgba(0,0,0,0.25) !important;
-  border-radius: 10px;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
+
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px;
@@ -240,6 +235,12 @@ a:hover {
 .icon {
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .resize-footer {
+    font-size: 0.6rem !important;
+  }
 }
 
 /* ANIMATIONS */

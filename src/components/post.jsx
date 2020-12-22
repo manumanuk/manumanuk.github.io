@@ -97,7 +97,7 @@ class Post extends Component {
                     imgCols.push(
                             <BootstrapImage fluid src = {require(`../assets/${this.state.images[imgId]}`)} className="mx-auto w-auto d-block" />
                     );
-                } else if(this.state.begin && this.state.imgTypes[imgId] == "width" && this.state.windowWidth > 992) {
+                } else if(this.state.begin && this.state.imgTypes[imgId] == "width" && this.state.windowWidth >= 992) {
                     imgRows.push(
                             <Col className="my-auto">
                                 <BootstrapImage fluid src={require(`../assets/${this.state.images[imgId]}`)} className="mx-auto w-auto d-block"/>

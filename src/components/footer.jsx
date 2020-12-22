@@ -42,7 +42,7 @@ class Footer extends Component {
     render() {
         return(
             <footer>
-                <Container className="mt-3 mb-1 text-center">
+                <Container className={"mt-3 mb-1 text-center " + (!this.props.pageName ? "resize-footer" : "")}>
                     <Row>
                         <Col>
                             <Link className="footer-text" to={this.links[this.state.page1]}><p>{this.state.page1}</p></Link>
