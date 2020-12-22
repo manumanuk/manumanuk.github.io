@@ -105,7 +105,7 @@ class HomePage extends Component {
                         <Row>
                             <Col>
                                 <p className="white-p-text">
-                                Worked with Arduino and other hardware including IoT (RC transmitters + receivers, camera module, SD card module, Wi-fi module, Bluetooth modules, QTI light sensors, etc), common ICs (e.g. 555-Timer, L293D Motor Driver), various robotics kits, and PIC Programming with Assembly.
+                                    Extensive experience with Arduino, IoT devices, common ICs (555-timer, L293D motor driver), various robotics kits, PIC programming and Assembly, PCB fabrication, I2C, UART, and SPI communication.
                                 </p>
                             </Col>
                         </Row>
@@ -135,7 +135,7 @@ class HomePage extends Component {
                         <Row>
                             <Col>
                                 <p className="white-p-text">
-                                3+ years of experience with C++ and OOP, 2+ years of experience with Python, over one year of experience with HTML/CSS/JavaScript, and exposure to several other languages and front-end frameworks including Angular, React, and Flutter. Backend experience includes AI certification from EDX, familiarity implementing a variety of APIs, and a good understanding of Firebase tools.
+                                4+ years of experience with OOP in C++, Python, JavaScript, TypeScript, and more. Strong background in front-end frameworks including Angular, React, and Flutter. Backend skills include certifications in computer vision and artificial intelligence, a good understanding of Firebase and GCP tools, and experience implementing a variety of APIs.
                                 </p>
                             </Col>
                         </Row>

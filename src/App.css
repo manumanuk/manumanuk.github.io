@@ -207,6 +207,7 @@ a:hover {
   font-family: "Open Sans";
   color: black;
   font-weight: 100;
+  white-space: pre-line;
 }
 
 .invert {

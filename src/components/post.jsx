@@ -169,7 +169,14 @@ class Post extends Component {
     }
 
     renderPost() {
-        if(this.props.index % 2 == 0 || this.state.windowWidth <= 992) {
+        if(this.state.windowWidth <= 992) {
+            return(
+                <Row className="my-5">
+                    {this.getPostText()}
+                    {this.getPostMedia()}
+                </Row>
+            );
+        } else if (this.props.index % 2 == 0) {
             return(
                 <Row className="my-5">
                     {this.getPostText()}
@@ -178,7 +185,7 @@ class Post extends Component {
             );
         } else {
             return(
-                <Row className="my-5">
+                <Row className="my-5 text-right">
                     {this.getPostMedia()}
                     {this.getPostText()}
                 </Row>
