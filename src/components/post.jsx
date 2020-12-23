@@ -53,7 +53,7 @@ class Post extends Component {
                     loadImg.remove();
                     this.setState({ imgTypes: orientations, begin: true });
                     if(this.props.scrollTo && document.getElementById(this.props.scrollTo) != null) {
-                        window.scrollTo({top: document.getElementById(this.props.scrollTo).offsetTop - document.getElementById('nav').offsetHeight, behavior: 'smooth'});
+                        window.scrollTo({top: document.getElementById(this.props.scrollTo).offsetTop + document.getElementById(this.props.scrollTo).offsetHeight/2 - this.state.windowHeight/2 + 0.5*document.getElementById('nav').offsetHeight, behavior: 'smooth'});
                     }
                 }
             }
@@ -92,7 +92,7 @@ class Post extends Component {
 
     getPostText() {
         return (
-            <Col lg={6} md={12} sm={12} xs={12} id={this.state.id} className="my-auto">
+            <Col lg={6} md={12} sm={12} xs={12} className="my-auto">
                 <h3 className="display-4 post-title">{this.state.title}</h3>
                 <h4 className="display-4 post-subtitle mb-3">{this.state.date}</h4>
                 <p className="post-text">{this.state.body}</p>
@@ -197,7 +197,7 @@ class Post extends Component {
 
     render() {
         return(
-            <div>
+            <div id={this.state.id}>
                 {this.renderPost()}
             </div>
         );
