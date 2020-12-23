@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94ddf8a49db3b15851fe480b88c42e22",
+    "revision": "f8cc0b09c7e67b776fa90a9855a7390a",
     "url": "/index.html"
   },
   {
-    "revision": "37aea7fedb29a342a2ea",
+    "revision": "0a4e8f025324586ee48f",
     "url": "/static/css/2.3cf5d70f.chunk.css"
   },
   {
-    "revision": "5ad53402ab0edaff0b60",
-    "url": "/static/css/main.846fbb2e.chunk.css"
+    "revision": "6294716c2346f8b74a67",
+    "url": "/static/css/main.0b1dbd64.chunk.css"
   },
   {
-    "revision": "37aea7fedb29a342a2ea",
-    "url": "/static/js/2.5db4579b.chunk.js"
+    "revision": "0a4e8f025324586ee48f",
+    "url": "/static/js/2.0e4f50e3.chunk.js"
   },
   {
     "revision": "df2659f20723d9e518ad965c595b69ee",
-    "url": "/static/js/2.5db4579b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.0e4f50e3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5ad53402ab0edaff0b60",
-    "url": "/static/js/main.d3522750.chunk.js"
+    "revision": "6294716c2346f8b74a67",
+    "url": "/static/js/main.5658eb19.chunk.js"
   },
   {
     "revision": "7c0cf5f8cb2fb73ad3a9",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0e589ea0e95b0f1a247b721c5a37c7f9",
     "url": "/static/media/coquito_home.0e589ea0.png"
+  },
+  {
+    "revision": "a13b0e57008eb12f4cc12d780cedb210",
+    "url": "/static/media/cs50-certificate.a13b0e57.jfif"
   },
   {
     "revision": "0fd1d568703ef0bf9473b1038fefa832",
@@ -106,6 +110,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0d3e3263eaf1358bddbfe75479bb59ee",
     "url": "/static/media/ni_mydaq.0d3e3263.jpg"
+  },
+  {
+    "revision": "6551f19d8a7b40a4ae1256157f8df9d1",
+    "url": "/static/media/portfolio-mobile.6551f19d.jpg"
   },
   {
     "revision": "163574f03082ac3c9091b0caba8c7289",

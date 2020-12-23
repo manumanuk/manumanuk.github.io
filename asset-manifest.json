@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.846fbb2e.chunk.css",
-    "main.js": "/static/js/main.d3522750.chunk.js",
-    "main.js.map": "/static/js/main.d3522750.chunk.js.map",
+    "main.css": "/static/css/main.0b1dbd64.chunk.css",
+    "main.js": "/static/js/main.5658eb19.chunk.js",
+    "main.js.map": "/static/js/main.5658eb19.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f3bfa2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f3bfa2a.js.map",
     "static/css/2.3cf5d70f.chunk.css": "/static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.5db4579b.chunk.js": "/static/js/2.5db4579b.chunk.js",
-    "static/js/2.5db4579b.chunk.js.map": "/static/js/2.5db4579b.chunk.js.map",
+    "static/js/2.0e4f50e3.chunk.js": "/static/js/2.0e4f50e3.chunk.js",
+    "static/js/2.0e4f50e3.chunk.js.map": "/static/js/2.0e4f50e3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.52fe9bd8bbc08acdc713fa21b77ea7bb.js": "/precache-manifest.52fe9bd8bbc08acdc713fa21b77ea7bb.js",
+    "precache-manifest.952db46790462ef7465fe97fbe556674.js": "/precache-manifest.952db46790462ef7465fe97fbe556674.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3cf5d70f.chunk.css.map": "/static/css/2.3cf5d70f.chunk.css.map",
-    "static/css/main.846fbb2e.chunk.css.map": "/static/css/main.846fbb2e.chunk.css.map",
-    "static/js/2.5db4579b.chunk.js.LICENSE.txt": "/static/js/2.5db4579b.chunk.js.LICENSE.txt",
+    "static/css/main.0b1dbd64.chunk.css.map": "/static/css/main.0b1dbd64.chunk.css.map",
+    "static/js/2.0e4f50e3.chunk.js.LICENSE.txt": "/static/js/2.0e4f50e3.chunk.js.LICENSE.txt",
     "static/media/arduino_bluetooth.jpg": "/static/media/arduino_bluetooth.d1e16ef4.jpg",
     "static/media/code.jpg": "/static/media/code.d33e419b.jpg",
     "static/media/code_background.jpg": "/static/media/code_background.2ad5e244.jpg",
     "static/media/coquito_details.png": "/static/media/coquito_details.a4fe2554.png",
     "static/media/coquito_home.png": "/static/media/coquito_home.0e589ea0.png",
+    "static/media/cs50-certificate.jfif": "/static/media/cs50-certificate.a13b0e57.jfif",
     "static/media/drone_flying.png": "/static/media/drone_flying.0fd1d568.png",
     "static/media/drone_hold.jpeg": "/static/media/drone_hold.537de716.jpeg",
     "static/media/fitbit_app.jpg": "/static/media/fitbit_app.f9e5f6c2.jpg",
@@ -34,6 +35,7 @@
     "static/media/moon.jpg": "/static/media/moon.b6f8703a.jpg",
     "static/media/ni_labview.jpg": "/static/media/ni_labview.a1c9f6ff.jpg",
     "static/media/ni_mydaq.jpg": "/static/media/ni_mydaq.0d3e3263.jpg",
+    "static/media/portfolio-mobile.jpg": "/static/media/portfolio-mobile.6551f19d.jpg",
     "static/media/redboard.JPG": "/static/media/redboard.163574f0.JPG",
     "static/media/redboard_background.jpg": "/static/media/redboard_background.ab28ca72.jpg",
     "static/media/redboard_dark.jpg": "/static/media/redboard_dark.b491ebfa.jpg",
@@ -46,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.2f3bfa2a.js",
     "static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.5db4579b.chunk.js",
-    "static/css/main.846fbb2e.chunk.css",
-    "static/js/main.d3522750.chunk.js"
+    "static/js/2.0e4f50e3.chunk.js",
+    "static/css/main.0b1dbd64.chunk.css",
+    "static/js/main.5658eb19.chunk.js"
   ]
 }
