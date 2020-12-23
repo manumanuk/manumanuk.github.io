@@ -229,6 +229,10 @@ a:hover {
 
 }
 
+.post-media {
+  max-height: 75vh;
+}
+
 /* .icon:hover {
   filter: invert(0%);
 } */

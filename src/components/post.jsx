@@ -35,7 +35,12 @@ class Post extends Component {
         if (data.images) {
             for (const img of Object.keys(data.images)) {
                 let loadImg = new Image();
-                loadImg.src = require("../assets/" + data.images[img]);
+                try {
+                    loadImg.src = require("../assets/" + data.images[img]);
+                    console.log(loadImg.src)
+                } catch (err) {
+                    console.error(err);
+                }
                 document.getElementById("test-bed").appendChild(loadImg);
                 loadImg.onload = () => {
                     if(loadImg.height/loadImg.width < 1.1 && loadImg.height/loadImg.width > 0.9) {
@@ -46,7 +51,10 @@ class Post extends Component {
                         orientations[img] = "width"
                     }
                     loadImg.remove();
-                    this.setState({ imgTypes: orientations, begin: true })
+                    this.setState({ imgTypes: orientations, begin: true });
+                    if(this.props.scrollTo && document.getElementById(this.props.scrollTo) != null) {
+                        window.scrollTo({top: document.getElementById(this.props.scrollTo).offsetTop - document.getElementById('nav').offsetHeight, behavior: 'smooth'});
+                    }
                 }
             }
         }
@@ -58,10 +66,6 @@ class Post extends Component {
             images: data.images,
             video: data.video,
             id: data.id
-        }, () => {
-            if(this.props.scrollTo && document.getElementById(this.props.scrollTo) != null) {
-                window.scrollTo({top: document.getElementById(this.props.scrollTo).offsetTop - document.getElementById('nav').offsetHeight, behavior: 'smooth'});
-            }
         });
         this.updateWindowDimensions();
         window.addEventListener('resize', this.updateWindowDimensions);
@@ -74,11 +78,21 @@ class Post extends Component {
     updateWindowDimensions() {
         this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight });
     }
-         
+    
+    getImageURL(imgId) {
+        let url;
+        try {
+            url = require(`../assets/${this.state.images[imgId]}`)
+        } catch (err) {
+            console.error(err);
+        } finally {
+            return url;
+        }
+    }
 
     getPostText() {
         return (
-            <Col lg={6} md={12} sm={12} xs={12} id={this.state.id}>
+            <Col lg={6} md={12} sm={12} xs={12} id={this.state.id} className="my-auto">
                 <h3 className="display-4 post-title">{this.state.title}</h3>
                 <h4 className="display-4 post-subtitle mb-3">{this.state.date}</h4>
                 <p className="post-text">{this.state.body}</p>
@@ -95,17 +109,17 @@ class Post extends Component {
             for(const imgId of Object.keys(this.state.images)) {
                 if(this.state.begin && (this.state.imgTypes[imgId] == "height" || this.state.imgTypes[imgId] == "square")) {
                     imgCols.push(
-                            <BootstrapImage fluid src = {require(`../assets/${this.state.images[imgId]}`)} className="mx-auto w-auto d-block" />
+                            <BootstrapImage fluid src = {this.getImageURL(imgId)} className="mx-auto w-auto d-block post-media" />
                     );
                 } else if(this.state.begin && this.state.imgTypes[imgId] == "width" && this.state.windowWidth >= 992) {
                     imgRows.push(
                             <Col className="my-auto">
-                                <BootstrapImage fluid src={require(`../assets/${this.state.images[imgId]}`)} className="mx-auto w-auto d-block"/>
+                                <BootstrapImage fluid src={this.getImageURL(imgId)} className="mx-auto w-auto d-block post-media"/>
                             </Col>
                     );
                 } else {
                     imgCols.push(
-                        <BootstrapImage fluid src = {require(`../assets/${this.state.images[imgId]}`)} className="mx-auto w-auto d-block" />
+                        <BootstrapImage fluid src = {this.getImageURL(imgId)} className="mx-auto w-auto d-block post-media" />
                     );
                 }
             }
@@ -136,19 +150,7 @@ class Post extends Component {
                 </Row>
             );
         }
-        
-        // if (this.state.images && Object.keys(this.state.images).length > 0) {
-        //     rows.push(
-        //         <Row>
-        //             {Object.keys(this.state.images).map((key, index) => (
-        //                 <Col className="my-auto">
-        //                     <BootstrapImage fluid src = {require(`../assets/${this.state.images[key]}`)} className="mx-auto w-auto d-block" />
-        //                 </Col>
-        //             ))}
-        //         </Row>
-        //     );
-        // }
-        
+                
         if (this.state.buttons) {
             for (var i = 0; i<Object.keys(this.state.buttons).length; i++) {
                 rows.push(
