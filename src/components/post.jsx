@@ -111,7 +111,7 @@ class Post extends Component {
                     imgCols.push(
                             <BootstrapImage fluid src = {this.getImageURL(imgId)} className="mx-auto w-auto d-block post-media" />
                     );
-                } else if(this.state.begin && this.state.imgTypes[imgId] == "width" && this.state.windowWidth >= 992) {
+                } else if(this.state.begin && this.state.imgTypes[imgId] == "width") {
                     imgRows.push(
                             <Col className="my-auto">
                                 <BootstrapImage fluid src={this.getImageURL(imgId)} className="mx-auto w-auto d-block post-media"/>
@@ -186,14 +186,7 @@ class Post extends Component {
     }
 
     renderPost() {
-        if(this.state.windowWidth <= 992) {
-            return(
-                <Row className="my-5">
-                    {this.getPostText()}
-                    {this.getPostMedia()}
-                </Row>
-            );
-        } else if (this.props.index % 2 == 0) {
+        if(this.state.windowWidth <= 992 || this.props.index % 2 == 0) {
             return(
                 <Row className="my-5">
                     {this.getPostText()}
