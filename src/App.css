@@ -233,9 +233,21 @@ a:hover {
   max-height: 75vh;
 }
 
-/* .icon:hover {
+.icon:hover {
   filter: invert(0%);
-} */
+  -webkit-filter: invert(0%);
+  -moz-filter: invert(0%);
+  -o-filter: invert(0%);
+  -ms-filter: invert(0%);
+}
+
+.icon-2:hover {
+  filter: invert(80%);
+  -webkit-filter: invert(80%);
+  -moz-filter: invert(80%);
+  -o-filter: invert(80%);
+  -ms-filter: invert(80%);
+}
 
 .icon {
   margin-left: 0.5em;

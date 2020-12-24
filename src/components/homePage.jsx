@@ -10,7 +10,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import {Link} from 'react-router-dom';
 import Footer from './footer';
 import githubLogo from '../assets/github_logo.png';
-import linkedinLogo from "../assets/linkedin_logo.png";
+import linkedinLogo from "../assets/linkedin_logo_dark.png";
 import mailIcon from "../assets/mail_icon_light.jpg";
 import phoneIcon from "../assets/phone_icon.png"
 
@@ -34,11 +34,11 @@ class HomePage extends Component {
                                 <a className="d-none d-lg-inline" target="_blank" href="https://github.com/manumanuk"><p className="contact-info d-inline text-bottom ml-2" style={{position: "relative", top: "2.4px"}}>manumanuk</p></a>
                             </Col>
                             <Col className="d-flex justify-content-center">
-                                <a target="_blank" href="https://www.linkedin.com/in/aryan-kalia/"><img className="icon" style={{height: '30px'}} src={linkedinLogo} /></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/aryan-kalia/"><img className="invert icon" style={{height: '30px'}} src={linkedinLogo} /></a>
                                 <a className="d-none d-lg-inline" target="_blank" href="https://www.linkedin.com/in/aryan-kalia/"><p className="contact-info d-inline text-bottom ml-2">aryan-kalia</p></a>
                             </Col>
                             <Col className="d-flex justify-content-center">
-                                <a target="_blank" href="mailto:aryan.kalia@uwaterloo.ca"><img className="icon" src={mailIcon} style={{height: '20px'}} /></a>
+                                <a target="_blank" href="mailto:aryan.kalia@uwaterloo.ca"><img className="icon-2" src={mailIcon} style={{height: '20px'}} /></a>
                                 <a className="d-none d-lg-inline" target="_blank" href="mailto:aryan.kalia@uwaterloo.ca"><p className="contact-info d-inline text-bottom ml-2">aryan.kalia@uwaterloo.ca</p></a>
                             </Col>
                             <Col className="d-flex justify-content-center">
