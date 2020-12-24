@@ -47,7 +47,7 @@ class HardwarePage extends Component {
                 </div>
                 <div className="py-5" style={{backgroundColor: 'rgb(248, 248, 248)'}}>
                     <Container >
-                        <Row>
+                        {/* <Row>
                             <Col><h1 className="display-3 mb-3 post-stream-heading">Engineering Club</h1></Col>                        
                         </Row>
                         <Row>
@@ -58,7 +58,7 @@ class HardwarePage extends Component {
                             <Col>
                                 <p className="post-text">At John Fraser Secondary School, I was president and Project Manager at the Engineering Club, often involved in creating and leading projects to teach to peers, or in collaborative ones working towards robotics competitions.</p>
                             </Col>
-                        </Row>
+                        </Row> */}
                         {this.state.posts && Object.keys(this.state.posts).map((key, index) => (
                             <div>
                             <Post content={this.state.posts[key]} index={index} scrollTo={this.props.match.params.elementId} />

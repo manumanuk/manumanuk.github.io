@@ -136,6 +136,21 @@ class Post extends Component {
                     </Row>
 
             );
+        } else if (this.state.video && typeof this.state.video != 'string') {
+            for (const video of Object.keys(this.state.video)) {
+                rows.push(
+                    <Row>
+                        <Col>
+                            {
+                                <ResponsiveEmbed aspectRatio="16by9">
+                                    <embed src={this.state.video[video]} />
+                                </ResponsiveEmbed>
+                            }
+                            <br/>
+                        </Col>
+                    </Row>
+                );
+            }
         } else if (this.state.video) {
             rows.push(
                 <Row>
