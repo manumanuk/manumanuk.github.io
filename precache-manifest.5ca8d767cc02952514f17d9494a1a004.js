@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11400276d45b291059ed1985ac943fa2",
+    "revision": "7d8e8c9099dffecbefe119a3e1e8ecd7",
     "url": "/index.html"
   },
   {
-    "revision": "6875f7d4ef892a463356",
+    "revision": "6378b9abc5d21e7cf0b6",
     "url": "/static/css/2.3cf5d70f.chunk.css"
   },
   {
-    "revision": "b3a2352b28adf64c5693",
+    "revision": "97ae9a82a5505e7d092c",
     "url": "/static/css/main.0b1dbd64.chunk.css"
   },
   {
-    "revision": "6875f7d4ef892a463356",
-    "url": "/static/js/2.8ff0fcc6.chunk.js"
+    "revision": "6378b9abc5d21e7cf0b6",
+    "url": "/static/js/2.a9195d68.chunk.js"
   },
   {
     "revision": "df2659f20723d9e518ad965c595b69ee",
-    "url": "/static/js/2.8ff0fcc6.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a9195d68.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3a2352b28adf64c5693",
-    "url": "/static/js/main.cedb6562.chunk.js"
+    "revision": "97ae9a82a5505e7d092c",
+    "url": "/static/js/main.2341643d.chunk.js"
   },
   {
     "revision": "7c0cf5f8cb2fb73ad3a9",
@@ -38,6 +38,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2ad5e24422e8c8a3f47750932de89111",
     "url": "/static/media/code_background.2ad5e244.jpg"
+  },
+  {
+    "revision": "4b4475c101f274ce79003bade87244f0",
+    "url": "/static/media/conveyor_drivetrain.4b4475c1.jpg"
+  },
+  {
+    "revision": "5c5de10d28f200aaf1d47d2e6edc21c2",
+    "url": "/static/media/conveyor_full.5c5de10d.jpg"
+  },
+  {
+    "revision": "71b0ae9eaea0b61ab2f60ff7eb927004",
+    "url": "/static/media/conveyor_sensors.71b0ae9e.png"
   },
   {
     "revision": "a4fe255447334adb85e8dcf0644b468b",
@@ -116,6 +128,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ni_mydaq.0d3e3263.jpg"
   },
   {
+    "revision": "80206ddc4606ff357efd912026d5c9ca",
+    "url": "/static/media/phone_stand_folded.80206ddc.png"
+  },
+  {
+    "revision": "4324811d19276a90e26b363fce399805",
+    "url": "/static/media/phone_stand_horizontal.4324811d.jpg"
+  },
+  {
+    "revision": "f687c41bb22e4ac6dc78a5275eedd02d",
+    "url": "/static/media/phone_stand_sketch.f687c41b.jpg"
+  },
+  {
+    "revision": "ef900b48372271b30dcb858979761031",
+    "url": "/static/media/phone_stand_sketch_iso.ef900b48.jpg"
+  },
+  {
     "revision": "6551f19d8a7b40a4ae1256157f8df9d1",
     "url": "/static/media/portfolio-mobile.6551f19d.jpg"
   },
@@ -150,5 +178,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "aa9a1feca70f8ff1f60e54e3893deab0",
     "url": "/static/media/uwarg-plane.aa9a1fec.jpg"
+  },
+  {
+    "revision": "d69dc3280d3d98ecce050f6f2691aee7",
+    "url": "/static/media/vertical_phone_stand.d69dc328.jpg"
   }
 ]);
