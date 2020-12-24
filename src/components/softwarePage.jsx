@@ -48,11 +48,24 @@ class SoftwarePage extends Component {
                 </div>
                 <div className="py-5" style={{backgroundColor: 'rgb(248, 248, 248)'}}>
                     <Container >
-                        {this.state.posts && Object.keys(this.state.posts).map((key, index) => (
+                        {this.state.posts && Object.keys(this.state.posts).splice(0, 8).map((key, index) => (
                             <div>
                             <Post content={this.state.posts[key]} index={index} scrollTo={this.props.match.params.elementId} />
-                            {index+1 != this.state.posts.length-1 && <div className="horizontal-divider" ></div>}
+                            {index+1 != this.state.posts.length-2 && <div className="horizontal-divider" ></div>}
                             </div>
+                        ))}
+                        <br/><br/>
+                        <Row>
+                            <Col><h1 className="display-3 mb-3 post-stream-heading w-100 text-center">Formal Education</h1></Col>                        
+                        </Row>
+                        <Row className="d-flex justify-content-center">
+                            <Col lg={2} sm={2} md={2} xs={2}><div className="horizontal-line"></div></Col>
+                        </Row>
+                        {this.state.posts && Object.keys(this.state.posts).splice(8).map((key, index) => (
+                        <div>
+                        <Post content={this.state.posts[key]} index={index} scrollTo={this.props.match.params.elementId} />
+                        {index+1 != 2 && <div className="horizontal-divider" ></div>}
+                        </div>
                         ))}
                         <div id="test-bed"></div>
                     </Container>
