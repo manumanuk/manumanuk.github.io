@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.a749f36a.chunk.css",
-    "main.js": "/static/js/main.3b2048ed.chunk.js",
-    "main.js.map": "/static/js/main.3b2048ed.chunk.js.map",
+    "main.js": "/static/js/main.5d6b623d.chunk.js",
+    "main.js.map": "/static/js/main.5d6b623d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f3bfa2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f3bfa2a.js.map",
     "static/css/2.3cf5d70f.chunk.css": "/static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.12cd1231.chunk.js": "/static/js/2.12cd1231.chunk.js",
-    "static/js/2.12cd1231.chunk.js.map": "/static/js/2.12cd1231.chunk.js.map",
+    "static/js/2.e9429747.chunk.js": "/static/js/2.e9429747.chunk.js",
+    "static/js/2.e9429747.chunk.js.map": "/static/js/2.e9429747.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3566d3686ae2f10a639edf59ac524c01.js": "/precache-manifest.3566d3686ae2f10a639edf59ac524c01.js",
+    "precache-manifest.27f79213909821a62c6a4cbac2644c0e.js": "/precache-manifest.27f79213909821a62c6a4cbac2644c0e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3cf5d70f.chunk.css.map": "/static/css/2.3cf5d70f.chunk.css.map",
     "static/css/main.a749f36a.chunk.css.map": "/static/css/main.a749f36a.chunk.css.map",
-    "static/js/2.12cd1231.chunk.js.LICENSE.txt": "/static/js/2.12cd1231.chunk.js.LICENSE.txt",
+    "static/js/2.e9429747.chunk.js.LICENSE.txt": "/static/js/2.e9429747.chunk.js.LICENSE.txt",
     "static/media/arduino_bluetooth.jpg": "/static/media/arduino_bluetooth.d1e16ef4.jpg",
     "static/media/code.jpg": "/static/media/code.d33e419b.jpg",
     "static/media/code_background.jpg": "/static/media/code_background.2ad5e244.jpg",
@@ -23,6 +23,7 @@
     "static/media/coquito_details.png": "/static/media/coquito_details.a4fe2554.png",
     "static/media/coquito_home.png": "/static/media/coquito_home.0e589ea0.png",
     "static/media/covidcontrol.png": "/static/media/covidcontrol.4953658d.png",
+    "static/media/covidtcmaps.png": "/static/media/covidtcmaps.6580e6e9.png",
     "static/media/cs50-certificate.jfif": "/static/media/cs50-certificate.a13b0e57.jfif",
     "static/media/drone_flying.png": "/static/media/drone_flying.0fd1d568.png",
     "static/media/drone_hold.jpeg": "/static/media/drone_hold.537de716.jpeg",
@@ -59,8 +60,8 @@
   "entrypoints": [
     "static/js/runtime-main.2f3bfa2a.js",
     "static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.12cd1231.chunk.js",
+    "static/js/2.e9429747.chunk.js",
     "static/css/main.a749f36a.chunk.css",
-    "static/js/main.3b2048ed.chunk.js"
+    "static/js/main.5d6b623d.chunk.js"
   ]
 }
