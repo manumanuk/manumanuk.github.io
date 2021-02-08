@@ -7,6 +7,8 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import {Image as BootstrapImage} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import ResponsiveEmbed from "react-bootstrap/ResponsiveEmbed";
+import firebase from "firebase/app";
+import "firebase/storage"
 
 class Post extends Component {
     
@@ -23,7 +25,8 @@ class Post extends Component {
             imgTypes: null,
             windowWidth: 0,
             windowHeight: 0,
-            begin : false
+            begin : false,
+            imgSrcs: null
         };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
@@ -32,30 +35,29 @@ class Post extends Component {
         var data = this.props.content;
 
         let orientations = {};
+        let srcDef = {};
         if (data.images) {
             for (const img of Object.keys(data.images)) {
                 let loadImg = new Image();
-                try {
-                    loadImg.src = require("../assets/" + data.images[img]);
-                    console.log(loadImg.src)
-                } catch (err) {
-                    console.error(err);
-                }
-                document.getElementById("test-bed").appendChild(loadImg);
-                loadImg.onload = () => {
-                    if(loadImg.height/loadImg.width < 1.1 && loadImg.height/loadImg.width > 0.9) {
-                        orientations[img] = "square";
-                    } else if (loadImg.height/loadImg.width > 1.1) {
-                        orientations[img] = "height";
-                    } else {
-                        orientations[img] = "width"
+                firebase.storage().ref("assets/" + data.images[img]).getDownloadURL().then(url => {
+                    loadImg.src = url;
+                    document.getElementById("test-bed").appendChild(loadImg);
+                    loadImg.onload = () => {
+                        if(loadImg.height/loadImg.width < 1.1 && loadImg.height/loadImg.width > 0.9) {
+                            orientations[img] = "square";
+                        } else if (loadImg.height/loadImg.width > 1.1) {
+                            orientations[img] = "height";
+                        } else {
+                            orientations[img] = "width"
+                        }
+                        srcDef[img] = loadImg.src;
+                        loadImg.remove();
+                        this.setState({ imgTypes: orientations, begin: true, imgSrcs: srcDef });
+                        if(this.props.scrollTo && document.getElementById(this.props.scrollTo) != null) {
+                            window.scrollTo({top: document.getElementById(this.props.scrollTo).offsetTop + document.getElementById(this.props.scrollTo).offsetHeight/2 - this.state.windowHeight/2 + 0.5*document.getElementById('nav').offsetHeight, behavior: 'smooth'});
+                        }
                     }
-                    loadImg.remove();
-                    this.setState({ imgTypes: orientations, begin: true });
-                    if(this.props.scrollTo && document.getElementById(this.props.scrollTo) != null) {
-                        window.scrollTo({top: document.getElementById(this.props.scrollTo).offsetTop + document.getElementById(this.props.scrollTo).offsetHeight/2 - this.state.windowHeight/2 + 0.5*document.getElementById('nav').offsetHeight, behavior: 'smooth'});
-                    }
-                }
+                }).catch(err => (console.error(err)));
             }
         }
         this.setState({
@@ -80,14 +82,10 @@ class Post extends Component {
     }
     
     getImageURL(imgId) {
-        let url;
-        try {
-            url = require(`../assets/${this.state.images[imgId]}`)
-        } catch (err) {
-            console.error(err);
-        } finally {
-            return url;
-        }
+        let url = "";
+        if (this.state.begin)
+            url = this.state.imgSrcs[imgId];
+        return url;
     }
 
     getPostText() {
