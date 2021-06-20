@@ -256,7 +256,10 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .resize-footer {
-    font-size: 0.6rem !important;
+    font-size: 0.4rem !important;
+  }
+  .footer-text {
+    font-size: 0.9em;
   }
 }
 
