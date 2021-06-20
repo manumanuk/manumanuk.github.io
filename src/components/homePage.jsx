@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import homebkg from '../assets/homebkg.jpg';
 import redboard from '../assets/redboard_background.jpg';
 import codebkg from '../assets/code_background.jpg';
+import mechbkg from '../assets/phonestand_3dprinted_bkgdark.jpg';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -87,6 +88,36 @@ class HomePage extends Component {
                         </Row>
                     </Container>
                 </Jumbotron>
+                
+                <div className="vh-100 d-flex align-items-center justify-content-center home-bg text-center m-0" style={{backgroundImage: `url(${codebkg})`}}>
+                <Container>
+                        <Row className="m-0 w-100">
+                            <Col>
+                                <h1 className="display-2 strong-title">Software Projects</h1>
+                                <br />
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-center">
+                            <Col lg={3} md={3} sm={3} xs={3}>
+                                <div className="horizontal-line-white"></div>
+                                <br />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <p className="white-p-text">
+                                4+ years of experience with OOP in C++, Python, JavaScript, TypeScript, and more. Strong background in front-end frameworks including Angular, React, and Flutter. Backend skills include certifications in computer vision and artificial intelligence, a good understanding of Firebase and GCP tools, and experience implementing a variety of APIs.
+                                </p>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <br/>
+                                <Link to="/software"><Button className="button-light py-2 px-4">View Software Projects</Button></Link>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
 
                 <div className="vh-100 d-flex align-items-center justify-content-center home-bg text-center m-0" style={{backgroundImage: `url(${redboard})`}}>
                     <Container>
@@ -118,11 +149,11 @@ class HomePage extends Component {
                     </Container>
                 </div>
 
-                <div className="vh-100 d-flex align-items-center justify-content-center home-bg text-center m-0" style={{backgroundImage: `url(${codebkg})`}}>
-                <Container>
+                <div className="vh-100 d-flex align-items-center justify-content-center home-bg text-center m-0" style={{backgroundImage: `url(${mechbkg})`}}>
+                    <Container>
                         <Row className="m-0 w-100">
                             <Col>
-                                <h1 className="display-2 strong-title">Software Projects</h1>
+                                <h1 className="display-2 strong-title">Mechanical Projects</h1>
                                 <br />
                             </Col>
                         </Row>
@@ -135,18 +166,19 @@ class HomePage extends Component {
                         <Row>
                             <Col>
                                 <p className="white-p-text">
-                                4+ years of experience with OOP in C++, Python, JavaScript, TypeScript, and more. Strong background in front-end frameworks including Angular, React, and Flutter. Backend skills include certifications in computer vision and artificial intelligence, a good understanding of Firebase and GCP tools, and experience implementing a variety of APIs.
+                                    Experience with and strong interest in AutoCAD, SolidWorks, and mechanical design through Mechatronics course content.
                                 </p>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <br/>
-                                <Link to="/software"><Button className="button-light py-2 px-4">View Software Projects</Button></Link>
+                                <Link to="/mechanical"><Button className="button-light py-2 px-4">View Mechanical Projects</Button></Link>
                             </Col>
                         </Row>
                     </Container>
                 </div>
+
                 <Footer pageName="Home"/>
             </body>
         );

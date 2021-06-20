@@ -9,6 +9,7 @@ import AboutPage from './components/aboutPage'
 import NotFoundPage from './components/notFoundPage'
 import HardwarePage from './components/hardwarePage';
 import SoftwarePage from './components/softwarePage';
+import MechanicalPage from './components/mechanicalPage';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
             <Route path="/hardware/:elementId" render={(props) => (<HardwarePage {...props}/>) } />
             <Route exact path="/software" component={ SoftwarePage } />
             <Route path="/software/:elementId" render={(props) => (<SoftwarePage {...props}/>) } />
+            <Route exact path="/mechanical" component={ MechanicalPage } />
+            <Route path="/mechanical/:elementId" render={(props) => (<MechanicalPage {...props}/>) } />
             <Route component={ NotFoundPage } />
         </Switch>
       </div>

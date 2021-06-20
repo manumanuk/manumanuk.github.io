@@ -12,13 +12,15 @@ class Footer extends Component {
         this.state = {
             page1: "",
             page2: "",
-            page3: ""
+            page3: "",
+            page4: "",
         };
-        this.pageNames = ["Home", "Hardware", "Software", "About"];
+        this.pageNames = ["Home", "Hardware", "Software", "Mechanical", "About"];
         this.links = {
             "Home" : "/",
             "Software" : "/software",
             "Hardware" : "/hardware",
+            "Mechanical" : "/mechanical",
             "About" : "/about"
         }
     }
@@ -29,7 +31,8 @@ class Footer extends Component {
             return {
                 page1: this.pageNames[0],
                 page2: this.pageNames[1],
-                page3: this.pageNames[2]
+                page3: this.pageNames[2],
+                page4: this.pageNames[3]
             };
         });
     }
@@ -52,6 +55,9 @@ class Footer extends Component {
                         </Col>
                         <Col>
                             <Link className="footer-text" to={this.links[this.state.page3]}><p>{this.state.page3}</p></Link>
+                        </Col>
+                        <Col>
+                            <Link className="footer-text" to={this.links[this.state.page3]}><p>{this.state.page4}</p></Link>
                         </Col>
                         {!this.props.pageName &&
                         <Col>
