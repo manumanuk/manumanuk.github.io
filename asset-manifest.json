@@ -1,32 +1,34 @@
 {
   "files": {
     "main.css": "/static/css/main.a749f36a.chunk.css",
-    "main.js": "/static/js/main.0e3cf24d.chunk.js",
-    "main.js.map": "/static/js/main.0e3cf24d.chunk.js.map",
+    "main.js": "/static/js/main.18a3f255.chunk.js",
+    "main.js.map": "/static/js/main.18a3f255.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f3bfa2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f3bfa2a.js.map",
     "static/css/2.3cf5d70f.chunk.css": "/static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.b35e078e.chunk.js": "/static/js/2.b35e078e.chunk.js",
-    "static/js/2.b35e078e.chunk.js.map": "/static/js/2.b35e078e.chunk.js.map",
+    "static/js/2.f8c922bb.chunk.js": "/static/js/2.f8c922bb.chunk.js",
+    "static/js/2.f8c922bb.chunk.js.map": "/static/js/2.f8c922bb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c35ad2f9722ce0b1f8553d95f239b987.js": "/precache-manifest.c35ad2f9722ce0b1f8553d95f239b987.js",
+    "precache-manifest.22b346d7296c7cbfc6178e506ed4203d.js": "/precache-manifest.22b346d7296c7cbfc6178e506ed4203d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3cf5d70f.chunk.css.map": "/static/css/2.3cf5d70f.chunk.css.map",
     "static/css/main.a749f36a.chunk.css.map": "/static/css/main.a749f36a.chunk.css.map",
-    "static/js/2.b35e078e.chunk.js.LICENSE.txt": "/static/js/2.b35e078e.chunk.js.LICENSE.txt",
+    "static/js/2.f8c922bb.chunk.js.LICENSE.txt": "/static/js/2.f8c922bb.chunk.js.LICENSE.txt",
     "static/media/code.jpg": "/static/media/code.d33e419b.jpg",
     "static/media/code_background.jpg": "/static/media/code_background.2ad5e244.jpg",
     "static/media/homebkg.jpg": "/static/media/homebkg.50d2708b.jpg",
     "static/media/mail_icon_light.jpg": "/static/media/mail_icon_light.82b8b505.jpg",
     "static/media/moon.jpg": "/static/media/moon.b6f8703a.jpg",
+    "static/media/phonestand_3dprinted_bkg.jpg": "/static/media/phonestand_3dprinted_bkg.6ac10972.jpg",
+    "static/media/phonestand_3dprinted_bkgdark.jpg": "/static/media/phonestand_3dprinted_bkgdark.a0fa8173.jpg",
     "static/media/redboard_background.jpg": "/static/media/redboard_background.ab28ca72.jpg",
     "static/media/redboard_dark.jpg": "/static/media/redboard_dark.b491ebfa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2f3bfa2a.js",
     "static/css/2.3cf5d70f.chunk.css",
-    "static/js/2.b35e078e.chunk.js",
+    "static/js/2.f8c922bb.chunk.js",
     "static/css/main.a749f36a.chunk.css",
-    "static/js/main.0e3cf24d.chunk.js"
+    "static/js/main.18a3f255.chunk.js"
   ]
 }
